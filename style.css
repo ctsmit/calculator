@@ -60,3 +60,13 @@ body {
    color: white;
    font-size: 2.5rem;
 }
+
+@media (max-width: 480px) {
+   .calulator-grid {
+      grid-template-columns: repeat(4, 50px);
+      grid-template-rows: minmax(60px, auto) repeat(4, 50px) repeat(1, 60px)
+   }
+   .calulator-grid > button {
+      font-size: 1rem;
+   }
+}
